@@ -1,0 +1,218 @@
+Git : A version Control System software 
+
+Github: An online hosting service website for git projects
+
+Github Desktop: A GUI tool for git commands 
+
+Git Kraken: Also a GUI tool for git
+
+Git Repository: A project folder that contains your code files, images and docs etc tracked by git with full history
+
+Github Repository: Hosted version of your local Git repository 
+. It Store code, used to collaborate with others, track issues, pull requests and changes
+. Share and showcase your work 
+
+Starting with Git:
+
+. Install Git 
+. Create a Github account
+
+To using Git we need to configure git first:
+
+Configuring Git:
+
+Commands to check current git configuration:
+
+1. git config user.name
+2. git config user.email
+
+Commands to configure git:
+
+1. git config --global user.name "user_name"
+2. git config --global user.email "user_email"
+
+Command Line interface that we can use:
+
+1. Terminal 
+2. Git bash 
+3. Command Prompt
+
+
+Note: A directory is just another word for a folder on your computer 
+
+Directory = Folder
+
+Repository: Holding all the code and all the historical code 
+
+
+CLI Commands:
+
+Windows Command Prompt:
+
+1. dir: list files in current directory
+2. cd: change directory 
+3. mkdir: make directory 
+4. cls: clear screen
+5. cd ..: bring back up in working directory 
+
+Tip: Use Tab to auto complete directories name 
+
+MacOS / Linux Command Line:
+
+Terminal:
+
+1. ls: list files in the current working directory
+2. cd: change directory 
+3. pwd: print current directory
+4. clear: clear screen
+5. cd ..: to back one level up in the directory 
+
+
+=========
+
+How to create a git Repository?
+
+. navigate to the folder where you want to initialize git using command Line
+
+For example: desktop/javascript:
+
+
+. run "git init" :
+
+-It will create a hidden .git folder in your working directory 
+-which hold all the information about version control system 
+-It manages the versioning of files in git repo 
+-And git will start monitoring your project folder 
+-you only need to run this command once for per project
+
+
+. run "git status" :
+
+-This command will report back the status of your Git Repository 
+-Used to check the current state of your working directory
+-Like as:
+. What changes have been made 
+. Which files are un tracked etc
+. means any change made inside the git repo is being tracked 
+
+Note: Inside a git repository do not initialize a new git repository
+means don't create nested git repository
+
+
+And we can use "git status" to make sure that if we are already in a git repository or not 
+
+we can create a git repository with github desktop as well 
+
+
+
+=> Lets create our first git and github repositories.
+
+There are 3 methods:
+
+. Using Git CLI command method
+. Github website method 
+. Github Desktop 
+
+
+1. Command Line method:
+
+. Go to location folder , it could be anywhere 
+
+. cd desktop/your_desired_folder
+
+.mkdir my-first-repo : to create a folder
+
+.cd my-first-repo
+
+.my-first-repo>git status : to check if its already a repo and if not 
+
+.my-first-repo>git init : to make it a git repo , creates a .git folder which will manage everything for us
+
+.my-first-repo>git status : it will tell you are on master branch and made no commits
+
+
+So thats how you actually create git repo 
+
+so this was using git init method locally 
+
+
+//========
+
+2. creating an online repo using Github :
+
+. go to github.com/new
+
+. select owner 
+
+. write repository name 
+
+. choose visibility: public/private
+
+. add a readme file optional 
+
+. .gitignore file optional: tells git which files to ignore 
+
+. create repository 
+
+Note: At this point this is only currently living on github not in your computer 
+
+So this is an online repo and its public 
+
+
+How to bring it to our local machine?
+
+Go to:
+
+. github.com/user-name/repo-name
+
+. click on code
+
+Ways to use this:
+
+1. Download the entire zip file / we can do this for any repo that is public 
+
+2. Github CLI:
+
+. Using https to clone it 
+. copy https web URL 
+. Open command prompt/ terminal 
+. go to location where you want to clone it 
+
+. run:
+
+. my-repo>git status 
+
+cloning mean: creating a copy of online repo on your local machine 
+
+
+Command to clone an online repo :
+
+. "git clone"
+
+. run "git clone https-web-url"
+
+thats it you cloned an online repo on your computer 
+
+All files from the online repo are copied to our local machine 
+
+So it was possible because we cloned a public repo
+
+we cannot clone a private repo unless we setup a token : private access tokens 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
