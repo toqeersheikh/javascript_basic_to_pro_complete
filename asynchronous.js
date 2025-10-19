@@ -339,3 +339,26 @@ console.log([1, 2, 3].map((v) => v * 2));
 // ! And:
 
 // An interface isn’t about connecting machines — it’s about connecting code. How different parts of our program can communicate to each other
+
+// ! API Data Formats:
+
+// AJAX Stands For:
+
+// Asynchronous JavaScript and XML
+
+// XML is a data format which used to be widely used to transmit data on the web
+
+// ! However these days no API uses XML data anymore
+
+// The Term AJAX is Just an OLD name got very popular back in the day and so it is still used today
+
+// Even though we don't use XML anymore
+
+// ! So instead:
+// ! Most APIs these days use JSON data format
+
+// ! JSON is the most popular API data format
+
+// ! Because it's basically just a JavaScript Object but Converted to a string
+
+// And therefor its very easy to send data across the web and also to use in JavaScript Once the data is arrived
