@@ -246,3 +246,39 @@ btn.addEventListener("click", whereAmI);
 // ! Promise.race()
 // ! Promise.allSettled()
 // ! Promise.any()
+
+// ? Top Level Await:
+
+// ! Starting From ES 2022 Version:
+// ! We can now use Await keyword outside of Async  Functions
+
+// AT least in modules
+
+// ? We can only use Await keyword outside of Async Function which we call Top Level Await
+// ? But this only works in modules
+
+// ! And in normal script it will not work
+
+// So it will only work in a script that look like this:
+//? {/*  <script type="module" defer src="script.js"></script> */}
+// ? because it has the: type="module"
+// ! but typically we place this tag in our HTML file, here it is just for demonstration
+
+// ? because it has the: type="module"
+// ! So this is what is required in order to make the top level await Actually work
+
+// ! So in a module we can do this:
+
+// const res = await fetch((`https://restcountries.com/v3.1/name/pakistan`);
+// const data=await res.json()
+
+//  So using await keyword without Async function
+
+// ? Now whats really important to understand here is :
+// ! this actually blocks the execution of entire module now
+
+// ! So infect the Await keyword which is now outside of the Async function is blocking the entire execution of the module which is something we haven't seen before
+
+// This wasn't really possible before we got top level await
+
+// ! Can be useful but harmful as well when it is a long running task
